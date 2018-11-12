@@ -1,4 +1,4 @@
-connection: "segment_sources"
+connection: "segment_catcher"
 
 # include all the views
 include: "*.view"
