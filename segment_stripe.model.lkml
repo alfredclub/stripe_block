@@ -1,4 +1,5 @@
-connection: "segment_catcher"
+connection: "alfredos_prod"
+week_start_day: saturday
 
 # include all the views
 include: "*.view"
