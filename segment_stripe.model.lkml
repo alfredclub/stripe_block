@@ -22,6 +22,12 @@ explore: calendar {
     relationship: many_to_one
   }
 
+  join: refunds {
+    type: left_outer
+    sql_on: ${charges.customer_id} = ${refunds.charge_id} ;;
+    relationship: one_to_one
+  }
+
   join: invoices {
     type: left_outer
     sql_on: ${charges.invoice_id} = ${invoices.id} ;;
